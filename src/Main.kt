@@ -9,7 +9,14 @@ fun fizzBuzz(n: Int): Array<String> {
 
     while (i < n) {
         val temp = i + 1
-        if (temp % 3 == 0 && temp % 5 == 0) {
+        when {
+            temp % 3 == 0 && temp % 5 == 0 -> array[i] = "FizzBuzz"
+            temp % 3 == 0 -> array[i] = "Buzz"
+            temp % 5 == 0 -> array[i] = "Fizz"
+            temp % 3 != 0 && temp % 5 != 0 -> array[i] = temp.toString()
+        }
+        i++
+        /*if (temp % 3 == 0 && temp % 5 == 0) {
             array[i] = "FizzBuzz"
         }
         else if (temp % 3 == 0) {
@@ -21,7 +28,7 @@ fun fizzBuzz(n: Int): Array<String> {
         else {
             array[i] = temp.toString()
         }
-        i++
+        i++ */
     }
     return array
 }
