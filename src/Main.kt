@@ -12,6 +12,7 @@ fun fizzBuzz(n: Int): Array<String> {
             temp % 3 == 0 -> array[i] = "Buzz"
             temp % 5 == 0 -> array[i] = "Fizz"
             temp % 3 != 0 && temp % 5 != 0 -> array[i] = temp.toString()
+            // To be fixed
         }
         i++
     }
