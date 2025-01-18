@@ -7,13 +7,13 @@ fun main() {
 
     // ex3
 
-    val student1 = Student("Jan", "Kowalski", intArrayOf(5, 4, 3, 1))
-    val student2 = Student("Kamil", "Heinrich", intArrayOf(2, 6, 5, 4))
-
     val subject1 = Subject("Algebra", Field.Mathematics, 4)
     val subject2 = Subject("Thermodynamics", Field.Physics, 2)
-    val subject3 = Subject("Web development", Field.Programming, 3)
-    val subject4 = Subject("Animals", Field.Biology, 1)
+    val subject3 = Subject("Web development", 3) // created with secondary constructor
+    val subject4 = Subject("Anatomy", Field.Biology, 1)
+
+    val student1 = Student("Jan", "Kowalski", subject1)
+    val student2 = Student("Kamil", "Heinrich")
 
     println("${student1.name} ${student1.surname}:")
     subject1.display()
