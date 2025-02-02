@@ -1,11 +1,11 @@
 fun main() {
-    val subject1 = Subject("Algebra", Field.Mathematics, 4)
-    val subject2 = Subject("Thermodynamics", Field.Physics, 2)
-    val subject3 = Subject("Web development", 3) // created with secondary constructor
-    val subject4 = Subject("Anatomy", Field.Biology, 1)
+    val subject1 = Subject("Algebra", FieldOfStudy.Mathematics, 4, 5)
+    val subject2 = Subject("Thermodynamics", FieldOfStudy.Physics, 2, 4)
+    val subject3 = Subject("Web development", 3, 3) //  secondary constructor
+    val subject4 = Subject("Anatomy", FieldOfStudy.Biology, 1, 2)
 
-    val student1 = Student("Jan", "Kowalski", intArrayOf(5, 4, 3, 1), listOf(subject1, subject2))
-    val student2 = Student("Kamil", "Heinrich", intArrayOf(2, 6, 5, 4), listOf(subject3, subject4))
+    val student1 = Student("Jan", "Kowalski", listOf(subject1, subject2))
+    val student2 = Student("Kamil", "Heinrich", listOf(subject3, subject4))
 
     println("${student1.name} subjects:")
     student1.subjects.forEach { it.display() }
