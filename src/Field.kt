@@ -1,4 +1,4 @@
-enum class Field {
+enum class FieldOfStudy {
     Programming,
     Mathematics,
     Chemistry,
