@@ -1,3 +1,5 @@
+import ex1.fizzBuzz
+
 fun main() {
 
     // ex1
@@ -14,6 +16,7 @@ fun main() {
 
     val student1 = Student("Jan", "Kowalski", listOf(subject1, subject2))
     val student2 = Student("Kamil", "Heinrich", listOf(subject3, subject4))
+
 
     println("${student1.name} subjects:")
     student1.subjects.forEach { it.display() }
