@@ -11,7 +11,7 @@ fun main() {
 
     val subject1 = Subject("Algebra", FieldOfStudy.Mathematics, 4, 5)
     val subject2 = Subject("Thermodynamics", FieldOfStudy.Physics, 2, 4)
-    val subject3 = Subject("Web development", 3, 3) //  secondary constructor
+    val subject3 = Subject("Web development", 3, 3)
     val subject4 = Subject("Anatomy", FieldOfStudy.Biology, 1, 2)
 
     val student1 = Student("Jan", "Kowalski", listOf(subject1, subject2))
