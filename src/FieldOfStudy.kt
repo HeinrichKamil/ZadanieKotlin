@@ -3,5 +3,6 @@ enum class FieldOfStudy {
     Mathematics,
     Chemistry,
     Physics,
-    Biology
+    Biology,
+    UNDEFINED
 }
