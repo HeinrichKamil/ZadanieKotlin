@@ -1,3 +1,5 @@
+package ex1
+
 fun fizzBuzz(n: Int): Array<String> {
     val array = Array(n) {""}
 
